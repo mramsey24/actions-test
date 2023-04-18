@@ -1,0 +1,10 @@
+name: Debug
+on:
+    pull_request
+jobs:
+    output-debug:
+        runs-on: ubuntu-18.04
+        steps:
+            - uses: mramsey24/github-action-explore-debug@main
+              with:
+                jq_selector: ".pull_request"
