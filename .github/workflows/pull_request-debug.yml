@@ -3,7 +3,7 @@ on:
     pull_request
 jobs:
     output-debug:
-        runs-on: ubuntu-18.04
+        runs-on: ubuntu-latest
         steps:
             - uses: mramsey24/github-action-explore-debug@main
               with:
